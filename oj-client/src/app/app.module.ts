@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import {routing} from './app.route';
 import { ProblemListComponent } from './components/problem-list/problem-list.component';
 import { ProblemDetailComponent } from './components/problem-detail/problem-detail.component';
-
-import { DataService } from './services/data.service';
 import { NarBarComponent } from './components/nar-bar/nar-bar.component';
 import { EditorComponent } from './components/editor/editor.component';
 import { NewProblemComponent } from './components/new-problem/new-problem.component';
+
+
+import { DataService } from './services/data.service';
+import { CollaborationService } from './services/collaboration.service';
+
+
 
 
 @NgModule({
@@ -34,6 +38,9 @@ import { NewProblemComponent } from './components/new-problem/new-problem.compon
   providers: [{
     provide: "data",
     useClass: DataService
+  },{
+    provide: "collaboration",
+    useClass: CollaborationService
   }],
   bootstrap: [AppComponent]
 })
