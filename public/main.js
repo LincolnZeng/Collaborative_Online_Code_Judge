@@ -772,6 +772,16 @@ var DataService = /** @class */ (function () {
             return res.json();
         }).catch(this.handleError);
     };
+    DataService.prototype.buildAndRun = function (data) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'content-type': 'application/json' });
+        var options = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["RequestOptions"]({ headers: headers });
+        return this.http.post("/api/v1/build_and_run", data, options)
+            .toPromise()
+            .then(function (res) {
+            console.log(res);
+            return res.json();
+        }).catch(this.handleError);
+    };
     DataService.prototype.handleError = function (error) {
         console.log('An error occured', error);
         return Promise.reject(error.body || error);
