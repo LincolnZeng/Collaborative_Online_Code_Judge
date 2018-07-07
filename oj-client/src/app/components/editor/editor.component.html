@@ -11,7 +11,7 @@
     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
       <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
     </button>
-​
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -35,12 +35,13 @@
   <div class="row">
       <div id="editor"></div>
   </div>
-​
-  <div>
+
+  <footer class="editor-footer">
+    <button type="button" class="btn btn-success pull-left" (click)="submit()">Submit Solution</button>
+  </footer>
+  <div >
+    Executed Result:
+    <br>
     {{output}}
   </div>
-​
-  <footer class="editor-footer">
-    <button type="button" class="btn btn-success pull-right" (click)="submit()">Submit Solution</button>
-  </footer>
 </section>

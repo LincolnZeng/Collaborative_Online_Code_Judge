@@ -10,7 +10,7 @@ cd ../oj-server
 npm install
 nodemon server.js &
 cd ../executor
-pip install -r requirements.text
+pip install -r requirements.txt
 python executor_server.py &
 echo "================================="
 read -p "PRESS [ENTER] TO TERMINATE PROCESS" PRESSKEY
