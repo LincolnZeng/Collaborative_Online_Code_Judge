@@ -1,0 +1,71 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @LincolnZeng Sign out
+0
+0 0 LincolnZeng/collabortative_coding_editing_judging_system
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+collabortative_coding_editing_judging_system/.gitignore
+f9b0596  28 days ago
+@ZengLincoln ZengLincoln connect back and fron end with http, and run on the same port
+
+42 lines (34 sloc)  508 Bytes
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+  # compiled output
+/dist
+/tmp
+/public
+
+# dependencies
+node_modules/
+
+# IDEs and editors
+/.idea
+  .project
+  .classpath
+  .c9/
+*.launch
+  .settings/
+
+# IDE - VSCode
+  .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
+Press h to open a hovercard with more details.
