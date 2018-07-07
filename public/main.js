@@ -95,12 +95,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_route__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.route */ "./src/app/app.route.ts");
-/* harmony import */ var _components_problem_list_problem_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/problem-list/problem-list.component */ "./src/app/components/problem-list/problem-list.component.ts");
-/* harmony import */ var _components_problem_detail_problem_detail_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/problem-detail/problem-detail.component */ "./src/app/components/problem-detail/problem-detail.component.ts");
-/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/data.service */ "./src/app/services/data.service.ts");
-/* harmony import */ var _components_nar_bar_nar_bar_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/nar-bar/nar-bar.component */ "./src/app/components/nar-bar/nar-bar.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_route__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.route */ "./src/app/app.route.ts");
+/* harmony import */ var _components_problem_list_problem_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/problem-list/problem-list.component */ "./src/app/components/problem-list/problem-list.component.ts");
+/* harmony import */ var _components_problem_detail_problem_detail_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/problem-detail/problem-detail.component */ "./src/app/components/problem-detail/problem-detail.component.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var _components_nar_bar_nar_bar_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/nar-bar/nar-bar.component */ "./src/app/components/nar-bar/nar-bar.component.ts");
+/* harmony import */ var _components_editor_editor_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/editor/editor.component */ "./src/app/components/editor/editor.component.ts");
+/* harmony import */ var _components_new_problem_new_problem_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/new-problem/new-problem.component */ "./src/app/components/new-problem/new-problem.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -117,28 +120,34 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _components_problem_list_problem_list_component__WEBPACK_IMPORTED_MODULE_6__["ProblemListComponent"],
-                _components_problem_detail_problem_detail_component__WEBPACK_IMPORTED_MODULE_7__["ProblemDetailComponent"],
-                _components_nar_bar_nar_bar_component__WEBPACK_IMPORTED_MODULE_9__["NarBarComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _components_problem_list_problem_list_component__WEBPACK_IMPORTED_MODULE_7__["ProblemListComponent"],
+                _components_problem_detail_problem_detail_component__WEBPACK_IMPORTED_MODULE_8__["ProblemDetailComponent"],
+                _components_new_problem_new_problem_component__WEBPACK_IMPORTED_MODULE_12__["NewProblemComponent"],
+                _components_nar_bar_nar_bar_component__WEBPACK_IMPORTED_MODULE_10__["NarBarComponent"],
+                _components_editor_editor_component__WEBPACK_IMPORTED_MODULE_11__["EditorComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_3__["HttpModule"],
-                _app_route__WEBPACK_IMPORTED_MODULE_5__["routing"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+                _app_route__WEBPACK_IMPORTED_MODULE_6__["routing"]
             ],
             providers: [{
                     provide: "data",
-                    useClass: _services_data_service__WEBPACK_IMPORTED_MODULE_8__["DataService"]
+                    useClass: _services_data_service__WEBPACK_IMPORTED_MODULE_9__["DataService"]
                 }],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -184,6 +193,69 @@ var routes = [
     }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes);
+
+
+/***/ }),
+
+/***/ "./src/app/components/editor/editor.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/editor/editor.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/editor/editor.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/editor/editor.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  editor works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/editor/editor.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/editor/editor.component.ts ***!
+  \*******************************************************/
+/*! exports provided: EditorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditorComponent", function() { return EditorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EditorComponent = /** @class */ (function () {
+    function EditorComponent() {
+    }
+    EditorComponent.prototype.ngOnInit = function () {
+    };
+    EditorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-editor',
+            template: __webpack_require__(/*! ./editor.component.html */ "./src/app/components/editor/editor.component.html"),
+            styles: [__webpack_require__(/*! ./editor.component.css */ "./src/app/components/editor/editor.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EditorComponent);
+    return EditorComponent;
+}());
+
 
 
 /***/ }),
@@ -251,6 +323,86 @@ var NarBarComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/new-problem/new-problem.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/new-problem/new-problem.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/new-problem/new-problem.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/new-problem/new-problem.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <form #fromRef=\"ngForm\">\n\n    <div class=\"form-group\">\n      <label for=\"problemName\">Problem Name</label>\n      <input type=\"text\" class=\"form-control\" id=\"problemName\" name=\"problemName\"\n             required placeholder=\"Enter Problem Name Here\" [(ngModel)]=\"newProblem.name\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"problemDec\">Problem Description</label>\n      <textarea type=\"text\" row=\"3\" style=\"height:150px;\" class=\"form-control\" id=\"problemDec\" name=\"problemDec\"\n                required placeholder=\"Enter Problem Description Here\" [(ngModel)]=\"newProblem.desc\"></textarea>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"difficulty\">Difficulty</label>\n      <select class=\"form-control\" id=\"difficulty\" name=\"difficulty\" [(ngModel)]=\"newProblem.difficulty\">\n        <option *ngFor=\"let difficulty of difficulties\" [value]=\"difficulty\" >\n        {{difficulty}}\n        </option>\n      </select>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <button type=\"submit\" class=\"btn btn-primary pull-left\" (click)=\"addProblem()\">Add Problem</button>\n      </div>\n    </div>\n\n  </form>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/new-problem/new-problem.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/new-problem/new-problem.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: NewProblemComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewProblemComponent", function() { return NewProblemComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+var DEFAULT_PROBLEM = Object.freeze({
+    id: 0,
+    name: "",
+    desc: "",
+    difficulty: "Easy"
+});
+var NewProblemComponent = /** @class */ (function () {
+    function NewProblemComponent(data) {
+        this.data = data;
+        this.difficulties = ["Easy", "Medium", "Hard", "Super"];
+        this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
+    }
+    NewProblemComponent.prototype.ngOnInit = function () {
+    };
+    NewProblemComponent.prototype.addProblem = function () {
+        this.data.addProblem(this.newProblem).catch(function (error) { return console.log(error.body); });
+        this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
+    };
+    NewProblemComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-new-problem',
+            template: __webpack_require__(/*! ./new-problem.component.html */ "./src/app/components/new-problem/new-problem.component.html"),
+            styles: [__webpack_require__(/*! ./new-problem.component.css */ "./src/app/components/new-problem/new-problem.component.css")]
+        }),
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])("data")),
+        __metadata("design:paramtypes", [Object])
+    ], NewProblemComponent);
+    return NewProblemComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/problem-detail/problem-detail.component.css":
 /*!************************************************************************!*\
   !*** ./src/app/components/problem-detail/problem-detail.component.css ***!
@@ -269,7 +421,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" *ngIf=\"problem\">\n  <div class=\"col-xs-12 col-md-4\">\n    <div>\n      <h2>\n        {{problem.id}}. {{problem.name}}\n      </h2>\n      <p>\n        {{problem.desc}}\n      </p>\n      <br />\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\" *ngIf=\"problem\">\n  <div class=\"col-xs-12 col-md-4\">\n    <div>\n      <h2>\n        {{problem.id}}. {{problem.name}}\n      </h2>\n      <p>\n        {{problem.desc}}\n      </p>\n      <br />\n    </div>\n  </div>\n  <div class=\"hidden-xs col-sm-12 col-md-8\">\n    <app-editor></app-editor>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -345,7 +497,7 @@ module.exports = ".difficulty {\n  min-width: 65px;\n  margin-right: 10px;\n}\n.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = container>\n  <div class = \"list-group\">\n    <a class = \"list-group-item\" *ngFor = \"let problem of problems\" [routerLink]=\"['/problems', problem.id]\">\n      <span class=\"{{'pull-left label difficulty diff-' + problem.difficulty.toLowerCase()}}\"> {{problem.difficulty}}</span>\n      <strong class=\"title\">{{problem.id}}. {{problem.name}}</strong>\n    </a>\n  </div>\n</div>\n"
+module.exports = "<div class = container>\n  <div class = \"list-group\">\n    <a class = \"list-group-item\" *ngFor = \"let problem of problems\" [routerLink]=\"['/problems', problem.id]\">\n      <span class=\"{{'pull-left label difficulty diff-' + problem.difficulty.toLowerCase()}}\"> {{problem.difficulty}}</span>\n      <strong class=\"title\">{{problem.id}}. {{problem.name}}</strong>\n    </a>\n  </div>\n  <app-new-problem></app-new-problem>\n</div>\n"
 
 /***/ }),
 
