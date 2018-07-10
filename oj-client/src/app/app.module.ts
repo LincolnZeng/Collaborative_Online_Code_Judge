@@ -15,6 +15,7 @@ import { NewProblemComponent } from './components/new-problem/new-problem.compon
 
 import { DataService } from './services/data.service';
 import { CollaborationService } from './services/collaboration.service';
+import { AuthService } from './services/auth.service';
 
 
 
@@ -41,6 +42,9 @@ import { CollaborationService } from './services/collaboration.service';
   },{
     provide: "collaboration",
     useClass: CollaborationService
+  },{
+    provide: "auth",
+    useClass: AuthService
   }],
   bootstrap: [AppComponent]
 })
