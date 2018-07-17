@@ -32,6 +32,6 @@ Collaboatively Edit and Code
 
 ![collaboration](https://user-images.githubusercontent.com/29580346/42846765-c5d361ae-89ce-11e8-939c-e7f03cec6655.png)
 
-Submit the code:
+Submit, Build and Run the code:
 
 ![executor](https://user-images.githubusercontent.com/29580346/42846768-c7f6a1b2-89ce-11e8-8654-65523bde35e0.png)
