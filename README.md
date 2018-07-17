@@ -25,10 +25,13 @@ Main Page:
 ![coj_main](https://user-images.githubusercontent.com/29580346/42846750-bc15a758-89ce-11e8-997d-3aedd33269b5.png)
 
 Sign In:
+
 ![signin](https://user-images.githubusercontent.com/29580346/42846762-c2cfd276-89ce-11e8-8586-78417e901e13.png)
 
 Collaboatively Edit and Code
+
 ![collaboration](https://user-images.githubusercontent.com/29580346/42846765-c5d361ae-89ce-11e8-939c-e7f03cec6655.png)
 
 Submit the code:
+
 ![executor](https://user-images.githubusercontent.com/29580346/42846768-c7f6a1b2-89ce-11e8-8654-65523bde35e0.png)
